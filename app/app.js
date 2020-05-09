@@ -5,11 +5,6 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-
-var listener = app.listen(3000, function() {
-  console.log(listener.address().port);
-});
-
 var mongoose   = require('mongoose');
 
 mongoose.Promise = global.Promise;
